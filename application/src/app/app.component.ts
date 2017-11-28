@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-selector',
   template: `<h1>Ultra Racing</h1>`,
   styleUrls: ['./app.component.css']
 })
