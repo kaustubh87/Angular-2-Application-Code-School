@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
     <li *ngFor="let carPart of carParts">
     <h2>{{ carPart.name }}</h2>
     <p>{{ carPart.description }}</p>
-    <p>{{ carPart.inStock }} in Stock</p>
+    <p *ngIf="carPart.inStock > 0"> {{ carPart.inStock }} in Stock.</p>
+    <p *ngIf="carPart.inStock === 0">Out of Stock</p>
   </ul>
   `,
   styleUrls: ['./app.component.css']
@@ -32,7 +33,5 @@ export class AppComponent {
   'name' : 'Padded Seats',
   'description': 'Super soft seats for smooth ride',
   'inStock' : 0
-
-
   }];
 }
