@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ultra Racing';
+
+  carPart = {
+    'id': 1,
+    'name' : 'Super Tires',
+    'description': 'These tire sare very best',
+    'inStock' : 5
+  };
 }
