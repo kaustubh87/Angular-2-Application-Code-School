@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'car-parts',
+  selector: 'app-car-parts',
   template: `<h1>{{ title }}</h1>
   <p>There are {{ totalCarParts() }} in stock</p>
   <ul>
