@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <h1>{{ title }}</h1>
+  <p>There are {{ totalCarParts() }} in stock</p>
+  <ul>
+    <li *ngFor="let carPart of carParts">
+    <h2>{{ carPart.name | uppercase }}</h2>
+    <p class="description">{{ carPart.description }}</p>
+    <p class="price">{{ carPart.price | currency : 'USD' :true }}</p>
+    <p *ngIf="carPart.inStock > 0"> {{ carPart.inStock }} in Stock.</p>
+    <p *ngIf="carPart.inStock === 0">Out of Stock</p>
+  </ul>
+
+
+
