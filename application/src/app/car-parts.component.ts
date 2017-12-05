@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CarPart } from './car-part';
 
 @Component({
   selector: 'app-car-parts',
@@ -9,7 +10,7 @@ import { Component } from '@angular/core';
 export class CarPartsComponent {
   title = 'Ultra Racing';
 
-    carParts = [{
+    carParts: CarPart[] = [{
       'id': 1,
       'name' : 'Super Tires',
       'description': 'These tires are very best',
