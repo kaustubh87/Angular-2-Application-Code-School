@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CarPart } from './car-part';
+import { CARPARTS } from './mocks';
 
 @Component({
   selector: 'app-car-parts',
@@ -10,27 +11,12 @@ import { CarPart } from './car-part';
 export class CarPartsComponent {
   title = 'Ultra Racing';
 
-    carParts: CarPart[] = [{
-      'id': 1,
-      'name' : 'Super Tires',
-      'description': 'These tires are very best',
-      'inStock' : 5,
-      'price' : 4.99
-    },
-    {
-    'id': 2,
-    'name' : 'Reinforced Tires',
-    'description': 'Shocks made fro mkryptonite',
-    'inStock' : 4,
-    'price': 9.99
-    },
-    {
-    'id' : 3,
-    'name' : 'Padded Seats',
-    'description': 'Super soft seats for smooth ride',
-    'inStock' : 0,
-    'price': 10.99
-    }];
+  carParts: CarPart[];
+
+  // tslint:disable-next-line:use-life-cycle-interface
+  ngOnInit() {
+    this.carParts = CARPARTS;
+  }
 
     totalCarParts() {
       let sum = 0;
