@@ -14,7 +14,7 @@ export const CARPARTS: CarPart[] = [{
   'description': 'Shocks made fro mkryptonite',
   'inStock' : 4,
   'price': 9.99,
-  'image' : 'images/car-parts-2.png'
+  'image' : './images/car-parts-2.png'
   },
   {
   'id' : 3,
