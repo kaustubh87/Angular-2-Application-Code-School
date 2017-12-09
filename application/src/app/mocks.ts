@@ -14,7 +14,7 @@ export const CARPARTS: CarPart[] = [{
   'description': 'Shocks made fro mkryptonite',
   'inStock' : 4,
   'price': 9.99,
-  'image' : './images/car-parts-2.png'
+  'image' : '/images/car-parts-2.png'
   },
   {
   'id' : 3,
@@ -22,5 +22,5 @@ export const CARPARTS: CarPart[] = [{
   'description': 'Super soft seats for smooth ride',
   'inStock' : 0,
   'price': 10.99,
-  'image': '../app/images/car-parts-3.png'
+  'image': '/images/car-parts-3.png'
   }];
