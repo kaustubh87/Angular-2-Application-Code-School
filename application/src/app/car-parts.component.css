@@ -8,4 +8,5 @@
 .featured{
   background: #57595D;
   border-image-slice:1;
+  -webkit-border-image: -webkit-linear-gradien(tright, #818fd8
 }
