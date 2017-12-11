@@ -8,5 +8,5 @@
 .featured{
   background: #57595D;
   border-image-slice:1;
-  -webkit-border-image: -webkit-linear-gradien(tright, #818fd8
+  -webkit-border-image: -webkit-linear-gradient(right, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
 }
