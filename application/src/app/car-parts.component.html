@@ -3,7 +3,7 @@
   <h1>{{ title }}</h1>
   <p>There are {{ totalCarParts() }} in stock</p>
   <ul>
-    <li class="card" *ngFor="let carPart of carParts">
+    <li class="card" *ngFor="let carPart of carParts" [class.featured]="carPart.featured">
       <div class="panel-body">
         <div class="photo">
           <img src="{{ carPart.image}}">
