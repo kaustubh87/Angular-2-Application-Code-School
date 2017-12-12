@@ -4,7 +4,7 @@
   <p>There are {{ totalCarParts() }} in stock</p>
   <ul>
     <li class="card" *ngFor="let carPart of carParts" [class.featured]="carPart.featured">
-      <div class="panel-body">
+      <div class="panel-body test-class">
         <div class="photo">
           <img src="{{ carPart.image}}">
         </div>
