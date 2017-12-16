@@ -7,4 +7,5 @@ export class CarPart {
   image: string;
   featured: boolean;
   quantity: number;
+  direct: boolean;
 }
