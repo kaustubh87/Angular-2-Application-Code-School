@@ -8,4 +8,5 @@ export class CarPart {
   featured: boolean;
   quantity: number;
   direct: boolean;
+  available: boolean;
 }
