@@ -9,4 +9,5 @@ export class CarPart {
   quantity: number;
   direct: boolean;
   available: boolean;
+  noOfWheels: number;
 }
