@@ -14,6 +14,10 @@
     <p class="price">{{ carPart.price | currency : 'USD' :true }}</p>
     <p *ngIf="carPart.inStock > 0"> {{ carPart.inStock }} in Stock.</p>
     <p *ngIf="carPart.inStock === 0">Out of Stock</p>
+    <div class="select-quantity">
+        <button class="increase" (click) = "upQuantity()">+</button>
+
+    </div>
   </ul>
 
 
