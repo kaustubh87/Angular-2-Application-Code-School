@@ -14,8 +14,7 @@ export class CarPartsComponent {
   carParts: CarPart[];
 
   upQuantity() {
-    // tslint:disable-next-line:quotemark
-    alert("You Called upQuantity");
+
   }
 
   // tslint:disable-next-line:use-life-cycle-interface
