@@ -13,7 +13,10 @@ export class CarPartsComponent {
 
   carParts: CarPart[];
 
-  upQuantity() {
+  upQuantity(carPart) {
+    if(carPart.quantity < carPart.inStock)
+      carPart.quantity++;
+
 
   }
 
