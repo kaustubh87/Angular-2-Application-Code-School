@@ -14,7 +14,8 @@ export class CarPartsComponent {
   carParts: CarPart[];
 
   upQuantity(carPart) {
-    if(carPart.quantity < carPart.inStock)
+    // tslint:disable-next-line:curly
+    if (carPart.quantity < carPart.inStock)
       carPart.quantity++;
 
 
