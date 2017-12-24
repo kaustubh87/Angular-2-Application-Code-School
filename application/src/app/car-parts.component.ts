@@ -17,8 +17,12 @@ export class CarPartsComponent {
     // tslint:disable-next-line:curly
     if (carPart.quantity < carPart.inStock)
       carPart.quantity++;
+  }
 
-
+  downQuantity(carPart){
+    // tslint:disable-next-line:curly
+    if (carPart.quantity !== 0 )
+    carPart.quantity --;
   }
 
   // tslint:disable-next-line:use-life-cycle-interface
