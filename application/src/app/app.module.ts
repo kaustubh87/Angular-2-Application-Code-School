@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 
 import { CarPartsComponent } from './car-parts.component';
@@ -12,7 +13,8 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
     CarPartsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, CarPartsComponent]
