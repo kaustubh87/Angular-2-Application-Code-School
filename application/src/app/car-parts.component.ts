@@ -31,6 +31,7 @@ export class CarPartsComponent {
   }
 
   //property binding
+
     totalCarParts() {
       let sum = 0;
       for (let carPart of this.carParts){
